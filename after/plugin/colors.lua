@@ -1,3 +1,15 @@
+require('rose-pine').setup({
+    disable_background = true
+})
+require('tokyonight').setup({
+    style = "night",
+    transparent = true,
+    styles = {
+        sidebars = "transparent",
+        floats = "transparent",
+    }
+})
+
 function ColorEditor(color)
     color = color or "rose-pine"
     vim.cmd.colorscheme(color)
