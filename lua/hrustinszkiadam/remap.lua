@@ -14,7 +14,11 @@ vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
 vim.keymap.set('n', 'ű', '$', { noremap = true, silent = true })
+vim.keymap.set('n', 'á', '0', { noremap = true, silent = true })
+vim.keymap.set('v', 'ű', '$', { noremap = true, silent = true })
+vim.keymap.set('v', 'á', '0', { noremap = true, silent = true })
 vim.keymap.set('n', 'é', ':', { noremap = true})
+vim.keymap.set('v', 'é', ':', { noremap = true})
 
 --Source
 vim.keymap.set("n", "<leader>w", vim.cmd.w) 
