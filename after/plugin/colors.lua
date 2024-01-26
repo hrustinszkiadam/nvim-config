@@ -11,7 +11,7 @@ require('tokyonight').setup({
 })
 
 function ColorEditor(color)
-    color = color or "rose-pine"
+    color = color or "tokyonight"
     vim.cmd.colorscheme(color)
     vim.cmd("AirlineTheme transparent")
 
@@ -19,4 +19,4 @@ function ColorEditor(color)
     vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 end
 
-ColorEditor("tokyonight")
+ColorEditor()
