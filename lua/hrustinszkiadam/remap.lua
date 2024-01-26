@@ -17,10 +17,14 @@ vim.keymap.set('n', 'ű', '$', { noremap = true, silent = true })
 vim.keymap.set('n', 'á', '0', { noremap = true, silent = true })
 vim.keymap.set('v', 'ű', '$', { noremap = true, silent = true })
 vim.keymap.set('v', 'á', '0', { noremap = true, silent = true })
-vim.keymap.set('n', 'é', ':', { noremap = true})
-vim.keymap.set('v', 'é', ':', { noremap = true})
 
 --Source
 vim.keymap.set("n", "<leader>w", vim.cmd.w) 
 vim.keymap.set("n", "<leader>W", vim.cmd.wq) 
 vim.keymap.set("n", "<leader><leader>", vim.cmd.so) 
+
+--Modes
+vim.keymap.set('n', 'é', ':', { noremap = true})
+vim.keymap.set('v', 'é', ':', { noremap = true})
+vim.keymap.set('n', 'ó', vim.cmd.terminal)
+vim.keymap.set('v', 'ó', vim.cmd.terminal)
