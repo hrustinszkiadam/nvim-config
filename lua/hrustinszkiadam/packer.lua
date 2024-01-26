@@ -2,12 +2,13 @@ vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
-  use({ 'rose-pine/neovim', as = 'rose-pine', config = function() vim.cmd('colorscheme rose-pine') end })
-  use({ 'folke/tokyonight.nvim', as = 'tokyonight', config = function() vim.cmd('colorscheme tokyonight') end })
+  use({ 'rose-pine/neovim', as = 'rose-pine'})
+  use({ 'folke/tokyonight.nvim', as = 'tokyonight'})
   use 'vim-airline/vim-airline'
   use 'vim-airline/vim-airline-themes'
   use 'nvim-tree/nvim-web-devicons'
   use 'prichrd/netrw.nvim'
+  use "folke/zen-mode.nvim"
   use {
       'nvim-telescope/telescope.nvim', tag = '0.1.5',
       requires = { {'nvim-lua/plenary.nvim'} }
