@@ -31,6 +31,12 @@ return {
             ColorEditor()
             end,
     },
-    'vim-airline/vim-airline',
-    'vim-airline/vim-airline-themes',
+    {
+        'vim-airline/vim-airline',
+        lazy = false,
+    },
+    {
+        'vim-airline/vim-airline-themes',
+        lazy = false,
+    },
 }
