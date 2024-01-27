@@ -4,4 +4,3 @@ require('nvim-web-devicons').setup {
     strict = true
 }
 
-require'nvim-web-devicons'.get_icons()
