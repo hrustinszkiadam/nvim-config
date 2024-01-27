@@ -8,6 +8,8 @@ function ColorEditor(color)
 end
 
 return {
+    'vim-airline/vim-airline',
+    'vim-airline/vim-airline-themes',
     {
         'rose-pine/neovim',
         name = 'rose-pine',
@@ -28,15 +30,6 @@ return {
                     floats = "transparent",
                 }
             })
-            ColorEditor()
             end,
-    },
-    {
-        'vim-airline/vim-airline',
-        lazy = false,
-    },
-    {
-        'vim-airline/vim-airline-themes',
-        lazy = false,
     },
 }
