@@ -1,3 +1,3 @@
-require("hrustinszkiadam.remap")
 require("hrustinszkiadam.set")
-require("hrustinszkiadam.packer")
+require("hrustinszkiadam.remap")
+require("hrustinszkiadam.lazy")
