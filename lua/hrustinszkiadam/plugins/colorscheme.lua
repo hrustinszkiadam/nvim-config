@@ -1,5 +1,5 @@
 function ColorEditor(color)
-    color = color or 'tokyonight'
+    color = color or 'catppuccin'
     vim.cmd.colorscheme(color)
     vim.cmd('AirlineTheme transparent')
 
@@ -10,6 +10,16 @@ end
 return {
     'vim-airline/vim-airline',
     'vim-airline/vim-airline-themes',
+    {
+        'catppuccin/nvim',
+        name = 'catppuccin',
+        config = function()
+            require('catppuccin').setup({
+                flavour = 'mocha',
+                transparent_background = true,
+            })
+        end,
+    },
     {
         'rose-pine/neovim',
         name = 'rose-pine',
@@ -22,37 +32,4 @@ return {
             })
         end,
     },
-    {
-        'folke/tokyonight.nvim',
-        config = function()
-            require('tokyonight').setup({
-                style = 'night',
-                transparent = true,
-                styles = {
-                    sidebars = 'transparent',
-                    floats = 'transparent',
-                }
-            })
-            end,
-    },
-    {
-        'gmr458/vscode_modern_theme.nvim',
-        config = function()
-            require('vscode_modern').setup({
-                cursorline = true,
-                transparent_background = true,
-                nvim_tree_darker = true,
-            })
-        end,
-    },
-    {
-        'catppuccin/nvim',
-        name = 'catppuccin',
-        config = function()
-            require('catppuccin').setup({
-                flavour = 'mocha',
-                transparent_background = true,
-            })
-        end,
-    }
 }
