@@ -28,3 +28,6 @@ vim.keymap.set('n', 'é', ':', { noremap = true})
 vim.keymap.set('v', 'é', ':', { noremap = true})
 vim.keymap.set('n', 'ó', vim.cmd.terminal)
 vim.keymap.set('t', '<ESC>', '<C-\\><C-n>')
+
+--Yanking to clipboard
+vim.keymap.set('v', '<leader>y', '"+y')
