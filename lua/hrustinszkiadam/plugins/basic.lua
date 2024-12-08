@@ -1,10 +1,9 @@
 return {
     {
-        'ThePrimeagen/vim-be-good'
+        'github/copilot.vim',
     },
     {
-        'neoclide/npm.nvim',
-        build = 'npm install',
+        'ThePrimeagen/vim-be-good'
     },
     {
         'windwp/nvim-autopairs',
